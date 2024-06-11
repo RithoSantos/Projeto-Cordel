@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+      --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+      --fonte02: 'Passion One', cursive;
+      --fonte03: 'Sriracha', cursive;
+      }
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+html, body {
+            max-height: 100vh;
+            background-color: #a9a9a9;
+            font-family: var(--fonte01);
+           }
+
+header {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+       }
+
+header > h1 {
+            padding-top: 10px;
+         /* text-transform: uppercase; AUMENTAR TAMANHO FONTE/GRITANTE */
+            font-variant: small-caps; /* AUMENTAR TAMANHO FONTE SEM MEXER NO ESTILO/ MAIS ÚTIL */
+            font-family: var(--fonte02);
+            font-size: 10vw; /* VW = SE AJUSTA CONFORME O NAVEGADOR/DISPOSITIVO */
+            }
+
+header > p {
+           padding-bottom: 10px;
+           }
+
+header a, footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+  }
+
+header a:hover, footer a:hover {
+        text-decoration: underline;
+        }
+
+section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 30px;
+        line-height: 2em;
+        font-family: var(--fonte03);
+        font-size: 3.5vw;
+         }
+
+section.normal {
+               background-color: #ffffff;
+               color: #000000;
+               }
+
+section.img {
+            background-color: #969292;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+            box-shadow: inset 1px 1px 0px #00000059 ;
+            }
+
+section#img01 {
+            background-image: url('../Cordel/imagens/background001.jpg');
+            background-position: right center;
+              }
+
+section#img02 {
+            background-image: url('../Cordel/imagens/background002.jpg');
+              }
+
+section > p {
+            padding-bottom: 2em;
+            }
+
+section.img > p {
+                background-color: #0000003b;
+                display: inline-block; /* PARA SE TORNAR UM BLOCO E CABER DENTRO DO PARAGRÁFO */
+            padding: 5px;                }
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+       }
